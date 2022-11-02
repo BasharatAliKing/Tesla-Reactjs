@@ -1,0 +1,53 @@
+.text{
+    position: absolute;
+    margin: 0px 530px;
+    margin-top: 80px;
+    text-align: center;
+    z-index: 1;
+}
+.text p span{
+    text-decoration: underline;
+}
+.buttons{
+    position: absolute;
+    z-index: 1;
+   
+    font-size: 15px;
+    text-align: center;
+    margin: 0px 430px;
+    margin-top: 500px;
+}
+.btn-1{
+    font-size: 15px;
+    padding: 5px 60px;
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+.btn-1:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.btn-2{
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px 50px;
+    background-color: rgb(255, 255, 255);
+}
+.btn-2:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+@media(max-width:576px){
+    .text{
+        margin: 40px 20px;
+    }
+    .buttons{
+        margin: 0px 30px;
+        margin-top: 400px;
+    }
+    .btn-2{
+        margin: 0px;
+        margin-top: 10px;
+        padding: 5px 45px;
+    }
+}

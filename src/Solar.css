@@ -1,0 +1,57 @@
+.tex{
+    position: absolute;
+    margin: 0px 520px;
+    margin-top: 80px;
+    text-align: center;
+    z-index: 1;
+}
+.tex p span{
+    text-decoration: underline;
+}
+.button{
+    position: absolute;
+    z-index: 1;
+   
+    font-size: 15px;
+    text-align: center;
+    margin: 0px 450px;
+    margin-top: 500px;
+}
+.btn-3{
+    font-size: 15px;
+    padding: 5px 70px;
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+.btn-3:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.btn-4{
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px 65px;
+    background-color: rgb(255, 255, 255);
+}
+.btn-4:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+@media(max-width:576px){
+        .tex {
+            margin: 60px 5px;
+        }
+    .button{
+        margin: 0px 50px;
+        margin-top: 400px;
+    }
+    .btn-3{
+        padding: 5px 60px;
+    }
+    .btn-4{
+        margin: 0px;
+        margin-top: 10px;
+        padding: 5px 57px;
+    }
+
+}

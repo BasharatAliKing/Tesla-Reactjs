@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#header nav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+#header nav a img{
+  margin-top: -9px;
+  width: 12%;
+  height: 30%;
+  margin-left: 20px;
+}
+.row .col-12{
+  padding: 0px;
+}
+#header #navbarSupportedContent{
+  margin-left: 370px;
+}
+#header ul li a{
+  color: black;
+  font-size: 14px;
+}
+#header ul li a:hover{
+  transition: .9s;
+  background-color: rgba(26, 26, 26, 0.116);
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#model-3{
+position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#model-y {
+  margin-top: 550px;
+}
+#model-s{
+  margin-top: 625px;
+}
+#model-x{
+  margin-top: 625px;
+}
+#solar-panels{
+  margin-top: 625px;
+}
+#solar-roof{
+  margin-top: 625px;
+}
+#accessories{
+  margin-top: 625px;
+}
+#accessories .texts{
+  position: absolute;
+  z-index: 1;
+  margin: 0px 560px;
+  margin-top: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#accessories .btn{
+  margin-top: 300px;
+  background-color: rgb(27, 27, 27);
   color: white;
+  padding: 5px 75px;
+  font-size: 15px;
+}
+#footer{
+  position: absolute;
+  z-index: 1;
+  margin: 0px 340px;
+margin-top: 580px;
+}
+#footer ul li{
+  margin: 0px 10px;
+  font-size: 13px;
+}
+@media(max-width:576px){
+  #accessories .texts{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin: 0px 40px;
+    margin-top: 80px;
+  }
+  #footer{
+    margin: 0px 90px;
+  margin-top: 580px;
+  text-align: center;
+  }
+  #footer ul {
+    display: inline-block;
+  }
+  #footer ul li{
+    margin-top: 10px;
+  }
+  #footer #vehicle{
+    display: none;
+  }
+  #footer #engage{
+    display: none;
+  }
+  #footer #location{
+    display: none;
+  }
+  #model-y {
+    margin-top: 159%;
+}
+#model-s {
+  margin-top: 167%;
+}
+#model-x {
+  margin-top: 167%;
+}
+#solar-panels{
+  margin-top: 167%;
+}
+#solar-roof{
+  margin-top: 167%;
+}
+#accessories{
+  margin-top: 167%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
