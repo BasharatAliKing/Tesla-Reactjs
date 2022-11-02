@@ -88,6 +88,9 @@ margin-top: 580px;
   font-size: 13px;
 }
 @media(max-width:576px){
+  img{
+    height: 100%;
+  }
   #header nav button{
     display: none;
   }
@@ -128,22 +131,22 @@ margin-top: 580px;
     display: none;
   }
   #model-y {
-    margin-top: 159%;
+    margin-top: 170%;
 }
 #model-s {
-  margin-top: 167%;
+  margin-top: 170%;
 }
 #model-x {
-  margin-top: 167%;
+  margin-top: 170%;
 }
 #solar-panels{
-  margin-top: 167%;
+  margin-top: 170%;
 }
 #solar-roof{
-  margin-top: 167%;
+  margin-top: 170%;
 }
 #accessories{
-  margin-top: 167%;
+  margin-top: 170%;
 }
 
 
