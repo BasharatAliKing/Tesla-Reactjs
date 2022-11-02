@@ -88,15 +88,27 @@ margin-top: 580px;
   font-size: 13px;
 }
 @media(max-width:576px){
+  #header nav button{
+    display: none;
+  }
+  #header nav a img{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 250%;
+    height: 50%;
+  }
   #accessories .texts{
     position: absolute;
     z-index: 1;
+    width: 100%;
     text-align: center;
-    margin: 0px 40px;
+    margin: 0px 0px;
     margin-top: 80px;
+
   }
   #footer{
-    margin: 0px 90px;
+    margin: 0px 0px;
+    width: 100%;
   margin-top: 580px;
   text-align: center;
   }

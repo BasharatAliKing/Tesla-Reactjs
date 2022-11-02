@@ -4,11 +4,7 @@ import  "bootstrap/dist/css/bootstrap.css";
 import Cars from './Cars';
 import Solar from './Solar';
 function App() {
-  const divRef = useRef();
-
-    const myFunction = () => {
-        divRef.current.scroll(0, 100); // Not Working, need to scroll y-100 only 
-    };
+ 
     
   return (
     <>
@@ -38,25 +34,25 @@ function App() {
 
       </section>
 
-    <section onClick={myFunction}   id="model-3">
+    <section    id="model-3">
           <Cars image={process.env.PUBLIC_URL+"./M3-Homepage-Desktop-LHD.jpg"} heading={"Model 3"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"}/>
     </section>
-    <section onClick={myFunction}  id="model-y">
+    <section   id="model-y">
      <Cars  image={process.env.PUBLIC_URL+"./Desktop-ModelY.jpg"} heading={"Model Y"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
     </section>
-    <section onClick={myFunction}  id="model-s">
+    <section   id="model-s">
      <Cars  image={process.env.PUBLIC_URL+"./Homepage-Model-S-Desktop-LHD.jpg"} heading={"Model S"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
     </section>
-    <section onClick={myFunction}  id="model-x">
+    <section   id="model-x">
      <Cars  image={process.env.PUBLIC_URL+"./Homepage-Model-X-Desktop-LHD.jpg"} heading={"Model X"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
     </section>
-    <section onClick={myFunction}  id="solar-panels">
+    <section   id="solar-panels">
      <Solar image={process.env.PUBLIC_URL+"./_25-HP-SolarPanels-D.jpg"} heading={"Solar Panels"} par={"Lowest Cost Solar Panels in America"} btn1={"Order Now"} btn2={"Learn More"} />
     </section>
-    <section onClick={myFunction}  id="solar-roof">
+    <section   id="solar-roof">
      <Solar image={process.env.PUBLIC_URL+"./Homepage-SolarRoof-Desktop-Global.webp"} heading={"Solar Roof"} par={"Produce Clean Energy From Your Roof"} btn1={"Order Now"} btn2={"Learn More"} />
     </section>
-    <section onClick={myFunction}  id="accessories">
+    <section   id="accessories">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">

@@ -38,12 +38,14 @@
 }
 
 @media(max-width:576px){
-    .text{
-        margin: 40px 20px;
+    .text {
+        margin: 60px 0px;
+        width: 100%;
+        text-align: center;
     }
     .buttons{
         margin: 0px 30px;
-        margin-top: 400px;
+        margin-top: 420px;
     }
     .btn-2{
         margin: 0px;
