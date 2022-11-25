@@ -1,13 +1,8 @@
 import React, {useEffect} from 'react';
 import "./Solar.css";
-import AOS from "aos";
-import  "aos/dist/aos.css";
 
 export default function Solar(props) {
-    useEffect(() => {
-        AOS.init()
-      
-    }, []);
+   
   return (
     <div>
 
@@ -17,8 +12,8 @@ export default function Solar(props) {
           <div className="col-12">
             <img src={props.image} alt="" />
           <div className="tex">
-          <h1  data-aos="zoom-in">{props.heading}</h1>
-          <p  data-aos="zoom-in">{props.par}</p>
+          <h1 >{props.heading}</h1>
+          <p >{props.par}</p>
          
           </div>
           <div  className="button">

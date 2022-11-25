@@ -3,14 +3,28 @@ import './App.css';
 import  "bootstrap/dist/css/bootstrap.css";
 import Cars from './Cars';
 import Solar from './Solar';
-function App() {
- 
-    
-  return (
-    <>
-   
-    {/* Header section start here */}
-      <section id="header">
+import ReactFullpage from '@fullpage/react-fullpage';
+
+
+// NOTE: if using fullpage extensions/plugins put them here and pass it as props
+const pluginWrapper = () => {
+//   require('./statics/fullpage.scrollHorizontally.min');
+};
+
+export const Fullpage = () => (
+  <ReactFullpage
+    pluginWrapper = {pluginWrapper}
+
+    //fullpage options
+    licenseKey = {'YOUR_KEY_HERE'}
+    scrollingSpeed = {1000} /* Options here */
+    scrollHorizontally = {true}  /* Because we are using the extension */
+    scrollHorizontallyKey = {'YOUR KEY HERE'}
+
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+             <section id="header">
       <nav class="navbar navbar-expand-lg  ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src={process.env.PUBLIC_URL+"./logo.png"} alt="" /></a>
@@ -33,38 +47,54 @@ function App() {
 </nav>
 
       </section>
-
-    <section    id="model-3">
-          <Cars image={process.env.PUBLIC_URL+"./M3-Homepage-Desktop-LHD.jpg"} heading={"Model 3"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"}/>
-    </section>
-    <section   id="model-y">
-     <Cars  image={process.env.PUBLIC_URL+"./Desktop-ModelY.jpg"} heading={"Model Y"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
-    </section>
-    <section   id="model-s">
-     <Cars  image={process.env.PUBLIC_URL+"./Homepage-Model-S-Desktop-LHD.jpg"} heading={"Model S"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
-    </section>
-    <section   id="model-x">
+        
+         
+           
+            <div onClick={() => fullpageApi.moveSectionDown()}>
+            <section id="model-3">
+            <Cars image={process.env.PUBLIC_URL+"./M3-Homepage-Desktop-LHD.jpg"} heading={"Model 3"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"}/>
+            </section>
+            </div>
+            <div className="section">
+            <section id="model-y">
+            <Cars  image={process.env.PUBLIC_URL+"./Desktop-ModelY.jpg"} heading={"Model Y"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
+            </section>
+            </div>
+            <div className="section">
+            <section id="model-s">
+            <Cars  image={process.env.PUBLIC_URL+"./Homepage-Model-S-Desktop-LHD.jpg"} heading={"Model S"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
+            </section>
+            </div>
+            <div className="section">
+            <section   id="model-x">
      <Cars  image={process.env.PUBLIC_URL+"./Homepage-Model-X-Desktop-LHD.jpg"} heading={"Model X"} para={"Order Online for Touchless Delivery"} btn1={"Custom Order"} btn2={"Existing Inventory"} />
     </section>
-    <section   id="solar-panels">
+            </div>
+            <div className="section">
+            <section   id="solar-panels">
      <Solar image={process.env.PUBLIC_URL+"./_25-HP-SolarPanels-D.jpg"} heading={"Solar Panels"} par={"Lowest Cost Solar Panels in America"} btn1={"Order Now"} btn2={"Learn More"} />
     </section>
-    <section   id="solar-roof">
+            </div>
+            <div className="section">
+            <section   id="solar-roof">
      <Solar image={process.env.PUBLIC_URL+"./Homepage-SolarRoof-Desktop-Global.webp"} heading={"Solar Roof"} par={"Produce Clean Energy From Your Roof"} btn1={"Order Now"} btn2={"Learn More"} />
     </section>
-    <section   id="accessories">
+            </div>
+              <div className="section">
+              <section   id="accessories">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
             <img src={process.env.PUBLIC_URL+"./dd739764-bcaa-4263-9488-8c73bc9fb046.jpg"} alt="" />
             <div className="texts">
-              <h1 data-aos="zoom-in">Accessories</h1>
+              <h1 >Accessories</h1>
               <button className='btn'>Shop Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+              </div>
     <section id="footer">
       <div className="container">
         <div className="row">
@@ -83,8 +113,9 @@ function App() {
         </div>
       </div>
     </section>
-   
-   </>
-)};
-
-export default App;
+          
+         </ReactFullpage.Wrapper>
+      );
+    }}
+  />
+);
