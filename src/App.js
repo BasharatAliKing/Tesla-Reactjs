@@ -94,8 +94,6 @@ export const Fullpage = () => (
         </div>
       </div>
     </section>
-              </div>
-    <div className="section">
     <section id="footer">
       <div className="container">
         <div className="row">
@@ -114,6 +112,9 @@ export const Fullpage = () => (
         </div>
       </div>
     </section>
+              </div>
+    <div className="section">
+   
     </div>
           
          </ReactFullpage.Wrapper>
